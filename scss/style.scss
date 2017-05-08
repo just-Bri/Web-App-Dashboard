@@ -1,6 +1,9 @@
-// Import all sass files
-@import 'modules';
-@import 'layout';
-@import 'base';
-@import 'other';
-@import 'shame';
+@import 'base/variables';
+@import 'base/extends';
+@import 'base/mixins';
+@import 'base/base';
+@import 'layout/containers';
+@import 'modules/footer';
+@import 'modules/header';
+@import 'modules/main';
+@import 'modules/nav';

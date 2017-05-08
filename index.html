@@ -17,30 +17,34 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header>
-            <div>
-                <p id="appName"><strong>Stats</strong>App<sup>TM</sup></p>
-            </div>
-            <div>
-                <img class="svg" id="notifcationBell" src="img/icons/icon-bell.svg" height="20px" width="20px">
-            </div>
-            <div>
-                <img class="svg" id="userIcon" src="img/icons/icon-user-profile.jpg" height="20px" width="20px">
-            </div>
-        </header>
-
-        <section class="main">
-
-        </section>
-        <aside class="sidebar">
+            <header class="mainHeader clearfix">
+                <div id="appName">
+                    <span><strong>STATS</strong>app<sup>TM</sup></span>
+                </div>
+                <div id="headerIcons">
+                    <div id="notificationBell">
+                        <img class="svg" src="img/icons/icon-bell.svg" height="20px" width="20px">
+                    </div>
+                    <div id="userIcon">
+                        <img class="svg" src="img/icons/icon-user-profile.jpg" height="20px" width="20px">
+                    </div>
+                </div>
+            </header>
+            <navigation class="navBar">
                 <img class="navSvg" src="img/icons/icon-dashboard.svg">
                 <img class="navSvg" src="img/icons/icon-members.svg">
                 <img class="navSvg" src="img/icons/icon-visits.svg">
                 <img class="navSvg" src="img/icons/icon-settings.svg">
-        </aside>
-        <footer>
-
-        </footer>
+            </navigation>
+           
+            <section class="main">
+                <div class="dashHeader">
+                    <span>DASHBOARD</span>
+                    <input type="text" name="search" placeholder="Search..">
+                </div>
+                <article></article> 
+                <!-- Place charts inside articles -->
+            </section>
 
         <!-- JS scripts -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

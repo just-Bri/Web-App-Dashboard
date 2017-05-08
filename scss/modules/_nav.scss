@@ -1,0 +1,12 @@
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-800;
+    .navSvg {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        max-width: 30px;
+        max-height: 30px;
+    }
+}

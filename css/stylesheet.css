@@ -1,3 +1,60 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
+html,
+body {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+* {
+  box-sizing: border-box; }
+
+header {
+  width: 100%;
+  max-height: 40px;
+  background-color: #607D8B;
+  padding-top: 0.5em; }
+  header #appName {
+    float: left; }
+  header #headerIcons {
+    float: right;
+    height: 100%; }
+    header #headerIcons #notificationBell {
+      padding-right: 0.25em;
+      float: left; }
+    header #headerIcons #userIcon {
+      padding-right: 0.25em;
+      float: right; }
+
+.main {
+  background-color: #607D8B; }
+
+.dashHeader {
+  display: inline-block;
+  justify-content: space-around;
+  width: 100%;
+  overflow: auto;
+  text-align: center;
+  padding-top: 0.25em; }
+  .dashHeader input {
+    vertical-align: middle;
+    background-color: #263238; }
+  .dashHeader textarea:focus, .dashHeader input:focus {
+    color: white; }
+  .dashHeader span {
+    display: inline-block;
+    vertical-align: middle; }
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #37474F; }
+  .navBar .navSvg {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    max-width: 30px;
+    max-height: 30px; }
 
 /*# sourceMappingURL=stylesheet.css.map */

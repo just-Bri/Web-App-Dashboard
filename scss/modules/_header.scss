@@ -1,0 +1,24 @@
+header {
+    width: 100%;
+    max-height: 40px;
+    background-color: $color-base;
+    padding-top: 0.5em;
+    #appName {
+        float: left;
+    }
+    #headerIcons {
+        float: right;
+        height: 100%;
+        #notificationBell {
+            padding-right: 0.25em;
+            float: left;
+        }
+        #userIcon {
+            padding-right: 0.25em;
+            float: right;
+        }
+    }
+}
+
+
+
