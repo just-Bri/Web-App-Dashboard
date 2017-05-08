@@ -14,15 +14,13 @@ $break-desktop: 'screen and (min-width: 1024px)';
 // Default Margin
 $default-margin: 0 auto;
 
-// Grid Spacing
-$grid-spacing: 3%;
-
 // Mixins
-@mixin centerImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+    // Center Image
+    @mixin centerImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 // Extends
 %clearfix:after {
