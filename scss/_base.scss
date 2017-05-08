@@ -1,1 +1,29 @@
 // Sets styles on base elements: html, body, a, ul, li, etc.
+body {
+    height: 100%;
+}
+
+// Header
+.topBar {
+    background-color: $light-purple;
+}
+.row {
+    width: 100%;
+    max-width: 1024px;
+    margin: $default-margin;
+}
+
+// Main Content
+.sideBar {
+    max-width: 80px;
+    background-color: $dark-purple;
+    margin-top: 0;
+}
+.navSvg {
+    max-height: 40px;
+    max-width: 40px;
+    width: 80%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    @include centerImage;
+}

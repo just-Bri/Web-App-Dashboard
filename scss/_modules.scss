@@ -1,3 +1,32 @@
 // Includes definitions for our modules, or objects. 
 // The goal is for as much code to exist in here as possible, making it flexible and reusable. 
 // This file will just be a list of modules defined (and documented) one after another.
+
+// Colors
+$light-purple: #7477bf;
+$dark-purple: #4d4c72;
+
+// Breakpoint sizes
+$break-mobile: 'screen and (min-width: 320px)';
+$break-tablet: 'screen and (min-width: 768px)';
+$break-desktop: 'screen and (min-width: 1024px)';
+
+// Default Margin
+$default-margin: 0 auto;
+
+// Grid Spacing
+$grid-spacing: 3%;
+
+// Mixins
+@mixin centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Extends
+%clearfix:after {
+    display:block;
+    clear:both;
+    content:'';
+}
