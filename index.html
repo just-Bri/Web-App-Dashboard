@@ -39,12 +39,38 @@
             </navigation>
            
             <section class="main">
-                <div class="dashHeader">
-                    <span>DASHBOARD</span>
-                    <input type="text" name="search" placeholder="Search..">
+                <div class="navTab">
+                    <div class="navBarTitle"><span>DASHBOARD</span></div>
+                    <div class="searchDiv"><input type="text" name="search" placeholder="Search.."></div>
                 </div>
-                <article></article> 
-                <!-- Place charts in individual articles -->
+                <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                You have unread Notifications.
+                </div>
+ 
+                <div id="trafficDiv" class="tab">
+                    <h4>TRAFFIC</h4>
+                    <button class="tablinks" onclick="openChart(event, 'Hourly')" id="defaultOpen">Hourly</button>
+                    <button class="tablinks" onclick="openChart(event, 'Daily')">Daily</button>
+                    <button class="tablinks" onclick="openChart(event, 'Weekly')">Weekly</button>
+                    <button class="tablinks" onclick="openChart(event, 'Monthly')">Monthly</button>
+                    </div>
+
+                    <div id="Hourly" class="tabcontent">
+                    <canvas id="traffic-hourly"></canvas>
+                    </div>
+
+                    <div id="Daily" class="tabcontent">
+                    <canvas id="traffic-daily"></canvas>
+                    </div>
+
+                    <div id="Weekly" class="tabcontent">
+                    <canvas id="traffic-weekly"></canvas>
+                    </div>
+
+                    <div id="Monthly" class="tabcontent">
+                    <canvas id="traffic-monthly"></canvas>
+                    </div>
             </section>
 
         <!-- JS scripts -->
@@ -52,6 +78,11 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+        <script type="text/javascript" src="js/localCharts.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
     </body>
 </html>

@@ -1,23 +1,54 @@
 .main {
     background-color: $color-base;
 }
-
-.dashHeader {
+.navTab {
     display: inline-block;
     justify-content: space-around;
     width: 100%;
     overflow:auto;
     text-align: center;
     padding-top: 0.25em;
-    input {
-        vertical-align: middle;
-        background-color: $color-900;
+    .navBarTitle {
+        float: left;
     }
-    textarea:focus, input:focus {
-        color: white;
+    .searchDiv {
+        float: right;
     }
     span {
         display: inline-block;
         vertical-align: middle;
     }
+    input {
+        vertical-align: middle;
+        background-color: $color-800;
+    }
+    textarea:focus, input:focus {
+        color: white;
+    }
 }
+
+/* The alert message box */
+.alert {
+    padding: 0.5em;
+    background-color: $color-800;
+    color: white;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: $color-base;
+}
+
+// Traffic Styling
