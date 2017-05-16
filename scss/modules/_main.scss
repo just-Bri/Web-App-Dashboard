@@ -27,14 +27,14 @@
     }
 }
 
-/* The alert message box */
+// The alert message box 
 .alert {
     padding: 0.5em;
     background-color: $color-800;
     color: white;
 }
 
-/* The close button */
+// The close button 
 .closebtn {
     margin-left: 15px;
     color: white;
@@ -46,7 +46,7 @@
     transition: 0.3s;
 }
 
-/* When moving the mouse over the close button */
+// When moving the mouse over the close button 
 .closebtn:hover {
     color: $color-base;
 }
