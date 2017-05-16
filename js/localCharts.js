@@ -1,16 +1,14 @@
 // Colors
-const colorBase = '#607D8B';
+const colorBase = '#009688';
 // Shades
-const color50 = '#ECEFF1';
-const color100 = '#ECEFF1';
-const color200 = '#B0BEC5';
-const color300 = '#90A4AE';
-const color400 = '#78909C';
-const color500 = '#607D8B';
-const color600 = '#546E7A';
-const color700 = '#455A64';
-const color800 = '#37474F';
-const color900 = '#263238';
+const color100 = '#A7FFEB';
+const color200 = '#64FFDA';
+const color400 = '#1DE9B6';
+const color700 = '#00BFA5';
+
+
+// Traffic Charts
+Chart.defaults.global.legend.display = false;
 
 // Chart constants
 const trafficChartHourly = document.getElementById('traffic-hourly');
@@ -18,15 +16,14 @@ const trafficChartDaily = document.getElementById('traffic-daily');
 const trafficChartWeekly = document.getElementById('traffic-weekly');
 const trafficChartMonthly = document.getElementById('traffic-monthly');
 
-// Traffic Charts
 // Hourly Traffic
 let trafficHourly = new Chart.Line(trafficChartHourly, {
 data: {
-  labels: ['8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'],
+  labels: ['9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'],
   datasets: [
         {
           label: '',
-          data: [15, 5, 8, 10, 80, 2, 6, 15, 75, 36, 4, 31],  
+          data: [5, 8, 10, 45, 7, 15, 25, 60, 43, 22, 31],  
           lineTension: 0,
           borderWidth: 3,
           pointBorderWidth: 3,
@@ -47,7 +44,7 @@ data: {
   datasets: [
         {
           label: '',
-          data: [287, 50, 378, 500, 48, 610, 137],  
+          data: [175, 50, 78, 105, 80, 225, 187],  
           lineTension: 0,
           pointBorderWidth: 3,
           pointRadius: 4,
@@ -63,11 +60,11 @@ data: {
 //Weekly Traffic
 let trafficWeekly = new Chart.Line(trafficChartWeekly, {
 data: {
-  labels: ['9-15', '16-22', '23-29', '30-6', '7-13', '14-20', '21-27', '28-3', '4-10', '11-17'],
+  labels: ['16-22', '23-29', '30-6', '7-13', '14-20', '21-27', '28-3', '4-10', '11-17'],
   datasets: [
         {
           label: '',
-          data: [500, 1030, 950, 1200, 1150, 1500, 1489, 1865, 800, 2010],  
+          data: [400, 600, 750, 625, 725, 850, 950, 700, 725],  
           lineTension: 0,
           pointBorderWidth: 3,
           pointRadius: 4,

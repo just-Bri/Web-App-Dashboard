@@ -47,15 +47,16 @@
                 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
                 You have unread Notifications.
                 </div>
- 
                 <div id="trafficDiv" class="tab">
                     <h4>TRAFFIC</h4>
-                    <button class="tablinks" onclick="openChart(event, 'Hourly')" id="defaultOpen">Hourly</button>
-                    <button class="tablinks" onclick="openChart(event, 'Daily')">Daily</button>
-                    <button class="tablinks" onclick="openChart(event, 'Weekly')">Weekly</button>
-                    <button class="tablinks" onclick="openChart(event, 'Monthly')">Monthly</button>
+                    <div id="trafficTabs">
+                        <button class="tablinks" onclick="openChart(event, 'Hourly')" id="defaultOpen">Hourly</button>
+                        <button class="tablinks" onclick="openChart(event, 'Daily')">Daily</button>
+                        <button class="tablinks" onclick="openChart(event, 'Weekly')">Weekly</button>
+                        <button class="tablinks" onclick="openChart(event, 'Monthly')">Monthly</button>
                     </div>
-
+                </div>
+                <div id="trafficChartDiv">
                     <div id="Hourly" class="tabcontent">
                     <canvas id="traffic-hourly"></canvas>
                     </div>
@@ -71,6 +72,7 @@
                     <div id="Monthly" class="tabcontent">
                     <canvas id="traffic-monthly"></canvas>
                     </div>
+                </div>
             </section>
 
         <!-- JS scripts -->

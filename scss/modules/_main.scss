@@ -20,7 +20,7 @@
     }
     input {
         vertical-align: middle;
-        background-color: $color-800;
+        background-color: $color-700;
     }
     textarea:focus, input:focus {
         color: white;
@@ -30,7 +30,7 @@
 // The alert message box 
 .alert {
     padding: 0.5em;
-    background-color: $color-800;
+    background-color: $color-700;
     color: white;
 }
 
@@ -52,3 +52,9 @@
 }
 
 // Traffic Styling
+#trafficDiv h4 {
+    float: left;
+}
+#trafficTabs {
+    float: right;
+}
