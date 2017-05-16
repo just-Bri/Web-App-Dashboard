@@ -46,9 +46,9 @@
                 <section class="alert">
                     <span class="closebtn" onclick="this.parentElement.style.display='none';">You have unread Notifications.</span> 
                 </section>
-                <section id="trafficSection" class="tab">      
+                <section id="trafficSection" class="tab"> 
+                    <div id="trafficTitle"><span>TRAFFIC</span></div>     
                     <div id="trafficTabs">
-                        <h4>TRAFFIC</h4>
                         <button class="tablinks" onclick="openChart(event, 'Hourly')" id="defaultOpen">Hourly</button>
                         <button class="tablinks" onclick="openChart(event, 'Daily')">Daily</button>
                         <button class="tablinks" onclick="openChart(event, 'Weekly')">Weekly</button>
@@ -73,27 +73,46 @@
                     </div>
                 </section>
                 <section id="dailyChartSection">
+                    <div id="dailyTitle"><span>DAILY TRAFFIC</span></div>
                     <div id="dailyChartDiv">
                         <canvas id="trafficDaily"></canvas>
                     </div>
                 </section>
 
                 <section id="mobileUsers">
+                    <div id="mobileTitle"><span>MOBILE USERS</span></div>
+                    <div id="mobileChartDiv">
+                        <canvas id="mobileChart"></canvas>
+                    </div>
                 </section>
 
                 <section id="socialStats">
+                    <div id="socialTitle"><span>SOCIAL STATS</span></div>
+                    <div id="twitterDiv">
+                        <canvas id="twitterChart"></canvas>
+                    </div>
+                    <div id="facebookDiv">
+                        <canvas id="facebookChart"></canvas>
+                    </div>
+                    <div id="googlePlusDiv">
+                        <canvas id="googlePlusChart"></canvas>
+                    </div>
                 </section>
 
                 <section id="newMembers">
+                    <div id="newMembersTitle"><span>NEW MEMBERS</span></div>
                 </section>
 
                 <section id="recentActivity">
+                    <div id="activityTitle"><span>RECENT ACTIVITY</span></div>
                 </section>
 
                 <section id="messageUser">
+                    <div id="messageTitle"><span>MESSAGE USER</span></div>
                 </section>
 
                 <section id="settings">
+                    <div id="settingsTitle"><span>SETTINGS</span></div>
                 </section>
             </section>
 
