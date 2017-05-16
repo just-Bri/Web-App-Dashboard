@@ -12,19 +12,19 @@ var color700 = '#00BFA5';
 Chart.defaults.global.legend.responsive = true;
 
 // Chart constants
-const trafficChartHourly = document.getElementById('traffic-hourly');
-const trafficChartDaily = document.getElementById('traffic-daily');
-const trafficChartWeekly = document.getElementById('traffic-weekly');
-const trafficChartMonthly = document.getElementById('traffic-monthly');
+var trafficChartHourly = document.getElementById('traffic-hourly');
+var trafficChartDaily = document.getElementById('traffic-daily');
+var trafficChartWeekly = document.getElementById('traffic-weekly');
+var trafficChartMonthly = document.getElementById('traffic-monthly');
 // Stand-Alone Chart Constants
-const dailyStandAlone = document.getElementById('trafficDaily');
-const mobileChart = document.getElementById('mobileChart');
-const twitterChart = document.getElementById('twitterChart');
-const facebookChart = document.getElementById('facebookChart');
-const googlePlusChart = document.getElementById('googlePlusChart');
+var dailyStandAlone = document.getElementById('trafficDaily');
+var mobileChart = document.getElementById('mobileChart');
+var twitterChart = document.getElementById('twitterChart');
+var facebookChart = document.getElementById('facebookChart');
+var googlePlusChart = document.getElementById('googlePlusChart');
 
 // Hourly Traffic
-let trafficHourly = new Chart.Line(trafficChartHourly, {
+var trafficHourly = new Chart.Line(trafficChartHourly, {
   options: {
     legend: {
       display: false,
@@ -50,7 +50,7 @@ let trafficHourly = new Chart.Line(trafficChartHourly, {
 });
 
 // Daily Traffic
-let trafficDaily = new Chart.Line(trafficChartDaily, {
+var trafficDaily = new Chart.Line(trafficChartDaily, {
   options: {
     legend: {
       display: false,
@@ -75,7 +75,7 @@ let trafficDaily = new Chart.Line(trafficChartDaily, {
 });
 
 //Weekly Traffic
-let trafficWeekly = new Chart.Line(trafficChartWeekly, {
+var trafficWeekly = new Chart.Line(trafficChartWeekly, {
   options: {
     legend: {
       display: false,
@@ -100,7 +100,7 @@ let trafficWeekly = new Chart.Line(trafficChartWeekly, {
 }); 
 
 // Monthly Traffic
-let trafficMonthly = new Chart.Line(trafficChartMonthly, {
+var trafficMonthly = new Chart.Line(trafficChartMonthly, {
   options: {
     legend: {
       display: false,
@@ -127,7 +127,7 @@ let trafficMonthly = new Chart.Line(trafficChartMonthly, {
 // Stand-Alone Charts
 
 // Daily
-const dailyChart = new Chart.Line(dailyStandAlone, {
+var dailyChart = new Chart.Line(dailyStandAlone, {
   options: {
     legend: {
       display: false,
@@ -152,7 +152,7 @@ const dailyChart = new Chart.Line(dailyStandAlone, {
 });
 
 // Mobile Users
-let mobileUsersChart = new Chart(mobileChart, {
+var mobileUsersChart = new Chart(mobileChart, {
   options: {
     legend: {
       position: 'right',
