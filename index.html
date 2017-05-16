@@ -32,47 +32,69 @@
             </header>
 
             <navigation class="navBar">
-                <img class="navSvg" src="img/icons/icon-dashboard.svg">
-                <img class="navSvg" src="img/icons/icon-members.svg">
-                <img class="navSvg" src="img/icons/icon-visits.svg">
-                <img class="navSvg" src="img/icons/icon-settings.svg">
+                <a href="index.html"><img class="navSvg" src="img/icons/icon-dashboard.svg"></a>
+                <a href="index.html"><img class="navSvg" src="img/icons/icon-members.svg"></a>
+                <a href="index.html"><img class="navSvg" src="img/icons/icon-visits.svg"></a>
+                <a href="index.html"><img class="navSvg" src="img/icons/icon-settings.svg"></a>
             </navigation>
            
             <section class="main">
-                <div class="navTab">
-                    <div class="navBarTitle"><span>DASHBOARD</span></div>
-                    <div class="searchDiv"><input type="text" name="search" placeholder="Search.."></div>
-                </div>
-                <div class="alert">
-                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-                You have unread Notifications.
-                </div>
-                <div id="trafficDiv" class="tab">
-                    <h4>TRAFFIC</h4>
+                <section class="dashboardHeader">
+                    <div class="dashboardSpan"><span>DASHBOARD</span></div>
+                    <div class="dashboardSearch"><input type="text" name="search" placeholder="Search.."></div>
+                </section>
+                <section class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">You have unread Notifications.</span> 
+                </section>
+                <section id="trafficSection" class="tab">      
                     <div id="trafficTabs">
+                        <h4>TRAFFIC</h4>
                         <button class="tablinks" onclick="openChart(event, 'Hourly')" id="defaultOpen">Hourly</button>
                         <button class="tablinks" onclick="openChart(event, 'Daily')">Daily</button>
                         <button class="tablinks" onclick="openChart(event, 'Weekly')">Weekly</button>
                         <button class="tablinks" onclick="openChart(event, 'Monthly')">Monthly</button>
                     </div>
-                </div>
-                <div id="trafficChartDiv">
-                    <div id="Hourly" class="tabcontent">
-                    <canvas id="traffic-hourly"></canvas>
-                    </div>
+                    <div id="trafficChartDiv">
+                        <div id="Hourly" class="tabcontent">
+                        <canvas id="traffic-hourly"></canvas>
+                        </div>
 
-                    <div id="Daily" class="tabcontent">
-                    <canvas id="traffic-daily"></canvas>
-                    </div>
+                        <div id="Daily" class="tabcontent">
+                        <canvas id="traffic-daily"></canvas>
+                        </div>
 
-                    <div id="Weekly" class="tabcontent">
-                    <canvas id="traffic-weekly"></canvas>
-                    </div>
+                        <div id="Weekly" class="tabcontent">
+                        <canvas id="traffic-weekly"></canvas>
+                        </div>
 
-                    <div id="Monthly" class="tabcontent">
-                    <canvas id="traffic-monthly"></canvas>
+                        <div id="Monthly" class="tabcontent">
+                        <canvas id="traffic-monthly"></canvas>
+                        </div>
                     </div>
-                </div>
+                </section>
+                <section id="dailyChartSection">
+                    <div id="dailyChartDiv">
+                        <canvas id="trafficDaily"></canvas>
+                    </div>
+                </section>
+
+                <section id="mobileUsers">
+                </section>
+
+                <section id="socialStats">
+                </section>
+
+                <section id="newMembers">
+                </section>
+
+                <section id="recentActivity">
+                </section>
+
+                <section id="messageUser">
+                </section>
+
+                <section id="settings">
+                </section>
             </section>
 
         <!-- JS scripts -->

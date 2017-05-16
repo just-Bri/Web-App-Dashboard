@@ -16,6 +16,8 @@ const trafficChartDaily = document.getElementById('traffic-daily');
 const trafficChartWeekly = document.getElementById('traffic-weekly');
 const trafficChartMonthly = document.getElementById('traffic-monthly');
 
+const dailyStandAlone = document.getElementById('trafficDaily');
+
 // Hourly Traffic
 let trafficHourly = new Chart.Line(trafficChartHourly, {
 data: {
@@ -96,3 +98,25 @@ data: {
     ]
 },
 }); 
+
+// Stand-Alone Charts
+
+// Daily
+let dailyChart = new Chart.Line(dailyStandAlone, {
+data: {
+  labels: ['S', 'M', 'T', 'W', 'TH', 'F', 'S'],
+  datasets: [
+        {
+          label: '',
+          data: [175, 50, 78, 105, 80, 225, 187],  
+          lineTension: 0,
+          pointBorderWidth: 3,
+          pointRadius: 4,
+          pointHoverRadius: 8,
+          pointStyle: 'circle',
+          showLine: true,
+          spanGaps: true,          
+        }
+    ]
+},
+});
