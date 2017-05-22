@@ -172,10 +172,65 @@ header {
 #newMembersDetails {
   width: 100%; }
 
-.memberDetails {
-  margin: 0 10px 0;
+#newMembersTitle {
   width: 90%;
-  border-bottom: black solid 1px; }
+  margin: 0 auto; }
+
+.memberDetails {
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: black solid 1px;
+  padding: 10px 0; }
+  .memberDetails img {
+    float: left;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px; }
+  .memberDetails .userName,
+  .memberDetails .userEmail,
+  .memberDetails .userJoined {
+    margin: 0; }
+  .memberDetails .userJoined {
+    display: none;
+    padding-top: 5px; }
+  .memberDetails .userNameEmailJoined {
+    margin: 0;
+    padding-left: 50px; }
+
+.activityContainer {
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: black solid 1px;
+  padding: 10px 0; }
+  .activityContainer img {
+    float: left;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px; }
+
+#recentUserActivity {
+  width: 100%; }
+
+#activityTitle {
+  width: 90%;
+  margin: 0 auto; }
+
+.activityContainer {
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: black solid 1px;
+  padding: 10px 0; }
+  .activityContainer img {
+    float: left;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px; }
+  .activityContainer .userActivity {
+    margin: 0; }
+    .activityContainer .userActivity * {
+      padding-left: 50px; }
+    .activityContainer .userActivity p {
+      margin: 0; }
 
 .navBar {
   display: flex;

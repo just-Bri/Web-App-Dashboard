@@ -127,8 +127,74 @@
 #newMembersDetails {
     width: 100%;
 }
+#newMembersTitle {
+    width: 90%;
+    margin: 0 auto;
+}
 .memberDetails {
-    margin: 0 10px 0;
+    margin: 0 auto;
     width: 90%;
     border-bottom: black solid 1px;
+    padding: 10px 0;
+    img {
+        float: left;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+    .userName,
+    .userEmail,
+    .userJoined {
+        margin: 0;
+    }
+    .userJoined {
+        display: none;
+        padding-top: 5px;
+    }
+    .userNameEmailJoined {
+        margin: 0;
+        padding-left: 50px;
+    }
+}
+
+// Recent Activity Styling
+.activityContainer {
+    margin: 0 auto;
+    width: 90%;
+    border-bottom: black solid 1px;
+    padding: 10px 0;
+    img {
+        float: left;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        }
+}
+#recentUserActivity {
+    width: 100%;
+}
+#activityTitle {
+    width: 90%;
+    margin: 0 auto;
+}
+.activityContainer {
+    margin: 0 auto;
+    width: 90%;
+    border-bottom: black solid 1px;
+    padding: 10px 0;
+    img {
+        float: left;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+    .userActivity {
+        margin: 0;
+        * {
+            padding-left: 50px;
+        }
+        p {
+            margin: 0;
+        }
+    }
 }
