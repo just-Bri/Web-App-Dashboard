@@ -1,7 +1,13 @@
-// Colors
+// Placeholder Colors
 $color-base: #009688; // 500
 // Shades
 $color-100: #A7FFEB;
 $color-200: #64FFDA;
 $color-400: #1DE9B6;
 $color-700: #00BFA5;
+
+// Probably my new colors
+$base-color: #35395c;
+$highlight-color: darken( desaturate( #e7c03a, 10% ), 5% );
+$notification-color: #f48236;
+$action-color: lighten( $base-color, 40% );

@@ -159,8 +159,8 @@ header {
 .closebtn:hover {
   color: #009688; }
 
-#trafficTabs {
-  float: right; }
+.tablinks {
+  display: inline-block; }
 
 .container {
   padding-top: 15px;
