@@ -1,3 +1,48 @@
+.switches, #userSettings {
+  /* The switch - the box around the slider */
+  /* Hide default HTML checkbox */
+  /* The slider */
+  /* Rounded sliders */ }
+  .switches .switch, #userSettings .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px; }
+  .switches .switch input, #userSettings .switch input {
+    display: none; }
+  .switches .slider, #userSettings .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  .switches .slider:before, #userSettings .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  .switches input:checked + .slider, #userSettings input:checked + .slider {
+    background-color: #2196F3; }
+  .switches input:focus + .slider, #userSettings input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3; }
+  .switches input:checked + .slider:before, #userSettings input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px); }
+  .switches .slider.round, #userSettings .slider.round {
+    border-radius: 34px; }
+  .switches .slider.round:before, #userSettings .slider.round:before {
+    border-radius: 50%; }
+
 .clearfix:after {
   content: '';
   display: table;
@@ -231,6 +276,37 @@ header {
       padding-left: 50px; }
     .activityContainer .userActivity p {
       margin: 0; }
+
+#messageContainer {
+  width: 90%;
+  margin: 0 auto; }
+  #messageContainer #messageInputs #messageTitle {
+    margin: 0 auto;
+    padding-bottom: 10px; }
+  #messageContainer #messageInputs #userSearchBox {
+    height: 24px; }
+  #messageContainer #messageInputs #userMessageBox {
+    height: 96px; }
+  #messageContainer #messageInputs #userSearchBox,
+  #messageContainer #messageInputs #userMessageBox {
+    border: black solid 1px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width: 100%; }
+
+#userSettings #settingsContainer {
+  width: 90%;
+  margin: 0 auto; }
+  #userSettings #settingsContainer #settingsToggles {
+    padding-top: 10px; }
+    #userSettings #settingsContainer #settingsToggles #sendText,
+    #userSettings #settingsContainer #settingsToggles #publicText {
+      display: inline-block;
+      height: 34px; }
+    #userSettings #settingsContainer #settingsToggles .switchFloat {
+      margin-top: 6px;
+      float: right; }
 
 .navBar {
   display: flex;

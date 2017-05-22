@@ -184,28 +184,28 @@
                 <section id="recentActivity" class="container">
                     <div id="activityTitle"><span>RECENT ACTIVITY</span></div>
                     <div id="recentUserActivity">
-                    <div id="recentActivityOne" class="activityContainer">
-                            <img id="activityOnePicture" class="userPicture" src="img/profile-images/userOne.jpg">
-                            <div class="userActivity">
-                                <p id="activityOne">John One Doe commented on STATSapp's SEO Tips</p>
-                                <a href="index.html">-></a>
+                        <div id="recentActivityOne" class="activityContainer">
+                                <img id="activityOnePicture" class="userPicture" src="img/profile-images/userOne.jpg">
+                                <div class="userActivity">
+                                    <p id="activityOne">John One Doe commented on STATSapp's SEO Tips</p>
+                                    <a href="index.html">-></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="recentActivityTwo" class="activityContainer">
-                            <img id="activityTwoPicture" class="userPicture" src="img/profile-images/userTwo.jpg">
-                            <div class="userActivity">
-                                <p id="activityTwo">John Two Doe liked the post Facebook's Changes for 2016</p>
-                                <a href="index.html">-></a>
+                        <div id="recentActivityTwo" class="activityContainer">
+                                <img id="activityTwoPicture" class="userPicture" src="img/profile-images/userTwo.jpg">
+                                <div class="userActivity">
+                                    <p id="activityTwo">John Two Doe liked the post Facebook's Changes for 2016</p>
+                                    <a href="index.html">-></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="recentActivityThree" class="activityContainer">
-                            <img id="activityThreePicture" class="userPicture" src="img/profile-images/userThree.jpg">
-                            <div class="userActivity">
-                                <p id="activityThree">John Three Doe commented on Facebook's Changes for 2016</p>
-                                <a href="index.html">-></a>
-                            </div>
+                        <div id="recentActivityThree" class="activityContainer">
+                                <img id="activityThreePicture" class="userPicture" src="img/profile-images/userThree.jpg">
+                                <div class="userActivity">
+                                    <p id="activityThree">John Three Doe commented on Facebook's Changes for 2016</p>
+                                    <a href="index.html">-></a>
+                                </div>
                         </div>
                     </div>
                     <div id="recentActivityFour" class="activityContainer">
@@ -219,11 +219,35 @@
                 </section>
 
                 <section id="messageUser"class="container">
-                    <div id="messageTitle"><span>MESSAGE USER</span></div>
+                    <div id="messageContainer">
+                        <div id="messageInputs">
+                            <div id="messageTitle"><span>MESSAGE USER</span></div>
+                            <input type="text" id="userSearchBox" placeholder="Search for User">
+                            <input type="text" id="userMessageBox" placeholder="Message for User">
+                        </div>
+                    </div>
                 </section>
 
-                <section id="settings"class="container">
-                    <div id="settingsTitle"><span>SETTINGS</span></div>
+                <section id="userSettings"class="container clearfix">
+                    <div id="settingsContainer">
+                        <div id="settingsTitle"><span>SETTINGS</span></div>
+                        <div id="settingsToggles">
+                            <div id="sendToggle" class="toggleContainer">
+                                <p id="sendText">Send Email Notifications</p>
+                                <label class="switch switchFloat">
+                                <input type="checkbox">
+                                <div class="slider round"></div>
+                                </label>
+                            </div>
+                            <div id="publicToggle" class="toggleContainer">
+                                <p id="publicText">Set Profile to Public</p>
+                                <label class="switch switchFloat">
+                                <input type="checkbox">
+                                <div class="slider round"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </section>
 

@@ -198,3 +198,54 @@
         }
     }
 }
+
+// Message User Styling
+#messageContainer {
+    width: 90%;
+    margin: 0 auto;
+    #messageInputs{
+        #messageTitle {
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        #userSearchBox {
+            height: 24px;
+        }
+        #userMessageBox {
+            height: 96px;
+        }
+        #userSearchBox,
+        #userMessageBox {
+            border: black solid 1px;
+            border-radius: 5px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        
+    }
+}
+
+// Settings Styling
+
+#userSettings {
+    // This pulls in a HUGE extend from _extends.scss
+    // Trying to work on keeping my main files clean :)
+    @extend .switches;
+    #settingsContainer {
+        width: 90%;
+        margin: 0 auto;
+        #settingsToggles {
+            padding-top: 10px;
+            #sendText,
+            #publicText {
+                display: inline-block;
+                height: 34px;
+            }
+            .switchFloat {
+                margin-top: 6px;
+                float: right;
+            }
+        }
+    }
+}
