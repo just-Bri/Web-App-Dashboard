@@ -15,7 +15,15 @@ header {
         }
         #userIcon {
             padding-right: 0.25em;
+            padding-left: 5px;
             float: right;
         }
+    }
+}
+.dashboardHeader {
+    padding-top: 10px;
+    .dashboardSpan {
+        padding-top: 3px;
+        padding-left: 10px;
     }
 }

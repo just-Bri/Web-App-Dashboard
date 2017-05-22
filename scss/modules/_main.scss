@@ -11,9 +11,7 @@
     .navBarTitle {
         float: left;
     }
-    .searchDiv {
-        float: right;
-    }
+    
     span {
         display: inline-block;
         vertical-align: middle;
@@ -27,9 +25,21 @@
     }
 }
 
+// Dashboard Title and Search
+.dashboardSpan {
+    float: left;
+}
+.dashboardSearch {
+    float: right;
+}
+.dashboardHeader {
+    padding-bottom: 15px;
+}
+
 // The alert message box 
 .alert {
     padding: 0.5em;
+    border: 1px solid $color-100;
     background-color: $color-700;
     color: white;
 }
@@ -40,10 +50,10 @@
     color: white;
     font-weight: bold;
     float: right;
-    font-size: 22px;
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
+    font-style: bold;
 }
 
 // When moving the mouse over the close button 
@@ -52,9 +62,73 @@
 }
 
 // Traffic Styling
-#trafficDiv h4 {
-    float: left;
-}
 #trafficTabs {
     float: right;
+}
+
+// Generic Section styling
+.container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: black solid 1px;
+    border-bottom: 0;
+}
+
+// Social Stats
+.socialDiv {
+    border: black solid 1px;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 80%;
+    max-width: 320px;
+}
+.socialBackground {
+    float: left;
+    position: relative;
+    background: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.socialIconTwitter {
+    float: left;
+    position:absolute ;
+    left: 23%;
+    top: 25%;
+    width: 30px;
+    fill: white;
+}
+.socialIconFacebook {
+    position:absolute ;
+    left: 20%;
+    top: -8%;
+    width: 30px;
+    fill: white;
+}
+.socialIconGooglePlus {
+    position:absolute ;
+    left:19% ;
+    top:21% ;
+    width: 30px;
+    fill: white;
+}
+.socialCopy {
+    padding-left: 60px;
+    p {
+        margin: 0;
+    }
+}
+
+// New Members styling
+#newMembersDetails {
+    width: 100%;
+}
+.memberDetails {
+    margin: 0 10px 0;
+    width: 90%;
+    border-bottom: black solid 1px;
 }

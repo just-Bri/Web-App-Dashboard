@@ -29,6 +29,13 @@ div.tab button.active {
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+    border: none;
+}
+.trafficTabs {
+    width: 80%;
+    max-width: 280px;
+}
+.trafficTitle {
+    width: 20%;
+    max-width: 40px;
 }

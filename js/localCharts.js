@@ -19,13 +19,14 @@ var trafficChartMonthly = document.getElementById('traffic-monthly');
 // Stand-Alone Chart Constants
 var dailyStandAlone = document.getElementById('trafficDaily');
 var mobileChart = document.getElementById('mobileChart');
-var twitterChart = document.getElementById('twitterChart');
-var facebookChart = document.getElementById('facebookChart');
-var googlePlusChart = document.getElementById('googlePlusChart');
 
 // Hourly Traffic
 var trafficHourly = new Chart.Line(trafficChartHourly, {
   options: {
+    title: {
+      display: true,
+      text: 'HOURLY TRAFFIC',
+    },
     legend: {
       display: false,
     },
@@ -52,6 +53,10 @@ var trafficHourly = new Chart.Line(trafficChartHourly, {
 // Daily Traffic
 var trafficDaily = new Chart.Line(trafficChartDaily, {
   options: {
+    title: {
+      display: true,
+      text: 'DAILY TRAFFIC',
+    },
     legend: {
       display: false,
     },
@@ -77,6 +82,10 @@ var trafficDaily = new Chart.Line(trafficChartDaily, {
 //Weekly Traffic
 var trafficWeekly = new Chart.Line(trafficChartWeekly, {
   options: {
+    title: {
+      display: true,
+      text: 'WEEKLY TRAFFIC',
+    },
     legend: {
       display: false,
     },
@@ -102,6 +111,10 @@ var trafficWeekly = new Chart.Line(trafficChartWeekly, {
 // Monthly Traffic
 var trafficMonthly = new Chart.Line(trafficChartMonthly, {
   options: {
+    title: {
+      display: true,
+      text: 'MONTHLY TRAFFIC',
+    },
     legend: {
       display: false,
     },
@@ -129,6 +142,10 @@ var trafficMonthly = new Chart.Line(trafficChartMonthly, {
 // Daily
 var dailyChart = new Chart.Line(dailyStandAlone, {
   options: {
+    title: {
+      display: true,
+      text: 'DAILY TRAFFIC',
+    },
     legend: {
       display: false,
     },
@@ -154,6 +171,10 @@ var dailyChart = new Chart.Line(dailyStandAlone, {
 // Mobile Users
 var mobileUsersChart = new Chart(mobileChart, {
   options: {
+    title: {
+      display: true,
+      text: 'DEVICE STATS',
+    },
     legend: {
       position: 'right',
       display: true,
