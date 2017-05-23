@@ -18,7 +18,7 @@
     }
     input {
         vertical-align: middle;
-        background-color: $color-700;
+        background-color: $color-base;
     }
     textarea:focus, input:focus {
         color: white;
@@ -30,6 +30,7 @@
     float: left;
 }
 .dashboardSearch {
+    background-color: $color-dark; 
     float: right;
 }
 .dashboardHeader {
@@ -39,8 +40,8 @@
 // The alert message box 
 .alert {
     padding: 0.5em;
-    border: 1px solid $color-100;
-    background-color: $color-700;
+    border: 1px solid $color-dark;
+    background-color: $color-highlight;
     color: white;
 }
 

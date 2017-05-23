@@ -1,10 +1,10 @@
 // Colors
-var colorBase = '#009688';
+var colorBase = '#607D8B';
 // Shades
-var color100 = '#A7FFEB';
-var color200 = '#64FFDA';
-var color400 = '#1DE9B6';
-var color700 = '#00BFA5';
+var color100 = '#ffd27f';
+var color200 = '#ffb732';
+var color400 = '#7f5200';
+var color700 = '#b27300';
 
 
 // Traffic Charts
