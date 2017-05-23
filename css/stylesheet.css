@@ -1,3 +1,12 @@
+.circle, .socialBackground, .memberDetails img, .activityContainer img {
+  border-radius: 50%; }
+
+.roundedCorners, .tablinks, #messageContainer #messageInputs #userSearchBox,
+#messageContainer #messageInputs #userMessageBox,
+#messageContainer #messageInputs #sendMessage, #userSettings #settingsContainer #timezoneSelector, #userSettings #settingsContainer #saveSettings #saveButton,
+#userSettings #settingsContainer #saveSettings #cancelButton {
+  border-radius: 5px; }
+
 .switches, #userSettings {
   /* The switch - the box around the slider */
   /* Hide default HTML checkbox */
@@ -159,8 +168,12 @@ header {
 .closebtn:hover {
   color: #009688; }
 
+#trafficTabs {
+  display: flex;
+  justify-content: space-around; }
+
 .tablinks {
-  display: inline-block; }
+  border: black solid 1px; }
 
 .container {
   padding-top: 15px;
@@ -184,8 +197,7 @@ header {
   position: relative;
   background: black;
   width: 50px;
-  height: 50px;
-  border-radius: 50%; }
+  height: 50px; }
 
 .socialIconTwitter {
   float: left;
@@ -228,7 +240,6 @@ header {
   padding: 10px 0; }
   .memberDetails img {
     float: left;
-    border-radius: 50%;
     width: 35px;
     height: 35px; }
   .memberDetails .userName,
@@ -249,7 +260,6 @@ header {
   padding: 10px 0; }
   .activityContainer img {
     float: left;
-    border-radius: 50%;
     width: 35px;
     height: 35px; }
 
@@ -267,7 +277,6 @@ header {
   padding: 10px 0; }
   .activityContainer img {
     float: left;
-    border-radius: 50%;
     width: 35px;
     height: 35px; }
   .activityContainer .userActivity {
@@ -286,14 +295,18 @@ header {
   #messageContainer #messageInputs #userSearchBox {
     height: 24px; }
   #messageContainer #messageInputs #userMessageBox {
-    height: 96px; }
+    padding-top: 6px; }
   #messageContainer #messageInputs #userSearchBox,
-  #messageContainer #messageInputs #userMessageBox {
+  #messageContainer #messageInputs #userMessageBox,
+  #messageContainer #messageInputs #sendMessage {
     border: black solid 1px;
-    border-radius: 5px;
-    padding-left: 10px;
     margin-bottom: 10px;
     width: 100%; }
+  #messageContainer #messageInputs #userSearchBox,
+  #messageContainer #messageInputs #userMessageBox {
+    padding-left: 10px; }
+  #messageContainer #messageInputs #sendMessage {
+    height: 24px; }
 
 #userSettings #settingsContainer {
   width: 90%;
@@ -307,6 +320,22 @@ header {
     #userSettings #settingsContainer #settingsToggles .switchFloat {
       margin-top: 6px;
       float: right; }
+  #userSettings #settingsContainer #timezoneSelector {
+    border: black solid 1px;
+    height: 24px;
+    width: 100%; }
+  #userSettings #settingsContainer #saveSettings {
+    display: flex;
+    justify-content: space-between; }
+    #userSettings #settingsContainer #saveSettings #saveButton {
+      width: 45%; }
+    #userSettings #settingsContainer #saveSettings #cancelButton {
+      width: 45%; }
+    #userSettings #settingsContainer #saveSettings #saveButton,
+    #userSettings #settingsContainer #saveSettings #cancelButton {
+      margin-top: 10px;
+      height: 24px;
+      border: black solid 1px; }
 
 .navBar {
   display: flex;

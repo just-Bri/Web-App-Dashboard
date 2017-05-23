@@ -62,22 +62,27 @@
 }
 
 // Traffic Styling
+#trafficTabs {
+    display: flex;
+    justify-content: space-around;
+}
 // Figure out how to center Chart labels!!!!!!!!
 .tablinks {
-    display: inline-block;
+    border: $black-border;
+    @extend .roundedCorners;
 }
 
 // Generic Section styling
 .container {
     padding-top: 15px;
     padding-bottom: 15px;
-    border: black solid 1px;
+    border: $black-border;
     border-bottom: 0;
 }
 
 // Social Stats
 .socialDiv {
-    border: black solid 1px;
+    border: $black-border;
     padding: 10px;
     margin-left: 10%;
     margin-right: 10%;
@@ -93,7 +98,7 @@
     background: black;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    @extend .circle;
 }
 .socialIconTwitter {
     float: left;
@@ -135,11 +140,11 @@
 .memberDetails {
     margin: 0 auto;
     width: 90%;
-    border-bottom: black solid 1px;
+    border-bottom: $black-border;
     padding: 10px 0;
     img {
         float: left;
-        border-radius: 50%;
+        @extend .circle;
         width: 35px;
         height: 35px;
     }
@@ -162,11 +167,11 @@
 .activityContainer {
     margin: 0 auto;
     width: 90%;
-    border-bottom: black solid 1px;
+    border-bottom: $black-border;
     padding: 10px 0;
     img {
         float: left;
-        border-radius: 50%;
+        @extend .circle;
         width: 35px;
         height: 35px;
         }
@@ -181,11 +186,11 @@
 .activityContainer {
     margin: 0 auto;
     width: 90%;
-    border-bottom: black solid 1px;
+    border-bottom: $black-border;
     padding: 10px 0;
     img {
         float: left;
-        border-radius: 50%;
+        @extend .circle;
         width: 35px;
         height: 35px;
     }
@@ -213,17 +218,23 @@
             height: 24px;
         }
         #userMessageBox {
-            height: 96px;
+            padding-top: 6px;
         }
         #userSearchBox,
-        #userMessageBox {
-            border: black solid 1px;
-            border-radius: 5px;
-            padding-left: 10px;
+        #userMessageBox,
+        #sendMessage {
+            border: $black-border;
+            @extend .roundedCorners;
             margin-bottom: 10px;
             width: 100%;
         }
-        
+        #userSearchBox,
+        #userMessageBox {
+            padding-left: 10px;
+        }
+        #sendMessage {
+            height: 24px;
+        }
     }
 }
 
@@ -246,6 +257,29 @@
             .switchFloat {
                 margin-top: 6px;
                 float: right;
+            }
+        }
+        #timezoneSelector {
+            border: $black-border;
+            height: 24px;
+            @extend .roundedCorners;
+            width: 100%;
+        }
+        #saveSettings {
+            display: flex;
+            justify-content: space-between;
+            #saveButton {
+                width: 45%;
+            }
+            #cancelButton {
+                width: 45%;
+            }
+            #saveButton,
+            #cancelButton {
+                margin-top: 10px;
+                height: 24px;
+                @extend .roundedCorners;
+                border: $black-border;
             }
         }
     }
