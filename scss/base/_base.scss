@@ -10,6 +10,12 @@ body {
   margin: 0 auto;
 }
 * {
-  color: black;
+  color: white;
   box-sizing: border-box;
+}
+a {
+  color: $color-highlight;
+}
+placeholder {
+  color: white;
 }

@@ -25,24 +25,17 @@
     }
 }
 
-// Dashboard Title and Search
-.dashboardSpan {
-    float: left;
-}
-.dashboardSearch {
-    background-color: $color-dark; 
-    float: right;
-}
-.dashboardHeader {
-    padding-bottom: 15px;
-}
-
 // The alert message box 
 .alert {
     padding: 0.5em;
     border: 1px solid $color-dark;
+    border-bottom: 0;
     background-color: $color-highlight;
     color: white;
+    #alertText {
+        margin: 0 auto;
+        color: white;
+    }
 }
 
 // The close button 
@@ -71,6 +64,8 @@
 .tablinks {
     border: $black-border;
     @extend .roundedCorners;
+    background-color: $color-dark;
+    color: white;
 }
 
 // Generic Section styling
@@ -93,10 +88,14 @@
     width: 80%;
     max-width: 320px;
 }
+#socialTitle {
+    width: 90%;
+    margin: 0 auto;
+}
 .socialBackground {
     float: left;
     position: relative;
-    background: black;
+    background: $color-highlight;
     width: 50px;
     height: 50px;
     @extend .circle;
@@ -197,9 +196,7 @@
     }
     .userActivity {
         margin: 0;
-        * {
-            padding-left: 50px;
-        }
+        margin-left: 50px;
         p {
             margin: 0;
         }
@@ -235,6 +232,7 @@
         }
         #sendMessage {
             height: 24px;
+            background-color: $color-dark;
         }
     }
 }
@@ -281,6 +279,7 @@
                 height: 24px;
                 @extend .roundedCorners;
                 border: $black-border;
+                background-color: $color-dark;
             }
         }
     }

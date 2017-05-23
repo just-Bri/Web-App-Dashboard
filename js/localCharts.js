@@ -1,15 +1,18 @@
 // Colors
 var colorBase = '#607D8B';
 // Shades
-var color100 = '#ffd27f';
-var color200 = '#ffb732';
-var color400 = '#7f5200';
-var color700 = '#b27300';
+var color200 = '#FFB569';
+var color400 = '#FFE89C';
+var color700 = '#FFFFCF';
+var colorBackground = '#f48236';
 
 
 // Traffic Charts
 // Chart.defaults.global.legend.display = false;
 Chart.defaults.global.legend.responsive = true;
+Chart.defaults.global.defaultFontColor = '#000';
+Chart.defaults.global.title.fontColor = '#000';
+Chart.defaults.global.elements.line.backgroundColor = colorBackground;
 
 // Chart constants
 var trafficChartHourly = document.getElementById('traffic-hourly');
@@ -44,7 +47,7 @@ var trafficHourly = new Chart.Line(trafficChartHourly, {
             pointHoverRadius: 8,
             pointStyle: 'circle',
             showLine: true,
-            spanGaps: true,          
+            spanGaps: true,     
           }
       ]
   },
@@ -73,7 +76,7 @@ var trafficDaily = new Chart.Line(trafficChartDaily, {
             pointHoverRadius: 8,
             pointStyle: 'circle',
             showLine: true,
-            spanGaps: true,          
+            spanGaps: true,        
           }
       ]
   },
@@ -102,7 +105,7 @@ var trafficWeekly = new Chart.Line(trafficChartWeekly, {
             pointHoverRadius: 8,
             pointStyle: 'circle',
             showLine: true,
-            spanGaps: true,          
+            spanGaps: true,         
           }
       ]
   },
@@ -131,7 +134,7 @@ var trafficMonthly = new Chart.Line(trafficChartMonthly, {
             pointHoverRadius: 8,
             pointStyle: 'circle',
             showLine: true,
-            spanGaps: true,          
+            spanGaps: true,         
           }
       ]
   },
@@ -162,7 +165,7 @@ var dailyChart = new Chart.Line(dailyStandAlone, {
             pointHoverRadius: 8,
             pointStyle: 'circle',
             showLine: true,
-            spanGaps: true,          
+            spanGaps: true,         
           }
       ]
   },
@@ -196,9 +199,9 @@ var mobileUsersChart = new Chart(mobileChart, {
                 color200
             ],
             hoverBackgroundColor: [
-                color100,
-                color100,
-                color100
+                colorBackground,
+                colorBackground,
+                colorBackground
             ]
         }]
   }

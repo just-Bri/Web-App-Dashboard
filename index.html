@@ -39,13 +39,12 @@
             </navigation>
            
             <section class="main">
-                <section class="dashboardHeader clearfix">
-                    <div class="dashboardSpan">DASHBOARD</div>
-                    <div class="dashboardSearch"><input type="text" name="search" placeholder="Search.."></div>
+                <section id="dashboardHeader" class="clearfix">
+                        <span id="dashboardSpan">DASHBOARD</span>
+                        <input id="dashboardSearch" type="text" name="search" placeholder="Search..">
                 </section>
                 <section class="alert">
-                    You have unread Notifications.
-                    <span class="closebtn" onclick="this.parentElement.style.display='none';">X</span>
+                    <p id="alertText">You have unread Notifications.<span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">X</span></p>
                 </section>
                 <section id="trafficSection" class="container">    
                     <div id="trafficTabs">
@@ -187,32 +186,28 @@
                         <div id="recentActivityOne" class="activityContainer">
                                 <img id="activityOnePicture" class="userPicture" src="img/profile-images/userOne.jpg">
                                 <div class="userActivity">
-                                    <p id="activityOne">John One Doe commented on STATSapp's SEO Tips</p>
-                                    <a href="index.html">-></a>
+                                    <p id="activityOne">John One Doe commented on <a href="index.html">STATSapp's SEO Tips</a>.</p>
                                 </div>
                             </div>
                         </div>
                         <div id="recentActivityTwo" class="activityContainer">
                                 <img id="activityTwoPicture" class="userPicture" src="img/profile-images/userTwo.jpg">
                                 <div class="userActivity">
-                                    <p id="activityTwo">John Two Doe liked the post Facebook's Changes for 2016</p>
-                                    <a href="index.html">-></a>
+                                    <p id="activityTwo">John Two Doe liked the post <a href="index.html">Facebook's Changes for 2016</a>.</p>
                                 </div>
                             </div>
                         </div>
                         <div id="recentActivityThree" class="activityContainer">
                                 <img id="activityThreePicture" class="userPicture" src="img/profile-images/userThree.jpg">
                                 <div class="userActivity">
-                                    <p id="activityThree">John Three Doe commented on Facebook's Changes for 2016</p>
-                                    <a href="index.html">-></a>
+                                    <p id="activityThree">John Three Doe commented on <a href="index.html">Facebook's Changes for 2016</a>.</p>
                                 </div>
                         </div>
                     </div>
                     <div id="recentActivityFour" class="activityContainer">
                             <img id="activityFourPicture" class="userPicture" src="img/profile-images/userFour.jpg">
                             <div class="userActivity">
-                                <p id="activityFour">John Four Doe posted STATSapp's SEO Tips</p>
-                                <a href="index.html">-></a>
+                                <p id="activityFour">John Four Doe posted <a href="index.html">STATSapp's SEO Tips</a>.</p>
                             </div>
                         </div>
                     </div>

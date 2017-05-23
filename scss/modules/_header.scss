@@ -20,10 +20,22 @@ header {
         }
     }
 }
-.dashboardHeader {
-    padding-top: 10px;
-    .dashboardSpan {
-        padding-top: 3px;
+// Dashboard Header and Search
+#dashboardHeader {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    #dashboardSpan {
+        line-height: 24px;
+        width: 40%;
+    }
+    #dashboardSearch {
+        background-color: $color-dark;
+        color: white;
         padding-left: 10px;
+        height: 24px;
+        width: 60%;
+        @extend .roundedCorners;
     }
 }
+
