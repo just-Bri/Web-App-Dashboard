@@ -1,4 +1,4 @@
-.circle, .socialBackground, .memberDetails img, .activityContainer img {
+.circle, #socialContainer .socialBackground, .memberDetails img, .activityContainer img {
   border-radius: 50%; }
 
 .roundedCorners, #dashboardHeader #dashboardSearch, .tablinks, #messageContainer #messageInputs #userSearchBox,
@@ -126,6 +126,7 @@ header {
   background-color: #607D8B;
   padding-top: 0.5em; }
   header #appName {
+    padding-left: 20px;
     float: left; }
   header #headerIcons {
     float: right;
@@ -211,7 +212,11 @@ header {
   border: #36474f solid 1px;
   border-bottom: 0; }
 
-.socialDiv {
+#socialTitle {
+  width: 90%;
+  margin: 0 auto; }
+
+#socialContainer .socialDiv {
   border: #36474f solid 1px;
   padding: 10px;
   margin-left: 10%;
@@ -221,44 +226,47 @@ header {
   display: inline-block;
   width: 80%;
   max-width: 320px; }
-
-#socialTitle {
-  width: 90%;
-  margin: 0 auto; }
-
-.socialBackground {
+  @media screen and (min-width: 768px) {
+    #socialContainer .socialDiv {
+      margin-right: 0;
+      margin-left: 0;
+      width: 30%;
+      max-width: 240px; } }
+#socialContainer .socialBackground {
   float: left;
   position: relative;
   background: #f48236;
   width: 50px;
   height: 50px; }
-
-.socialIconTwitter {
+#socialContainer .socialIconTwitter {
   float: left;
   position: absolute;
   left: 23%;
   top: 25%;
   width: 30px;
   fill: white; }
-
-.socialIconFacebook {
+#socialContainer .socialIconFacebook {
   position: absolute;
   left: 20%;
   top: -8%;
   width: 30px;
   fill: white; }
-
-.socialIconGooglePlus {
+#socialContainer .socialIconGooglePlus {
   position: absolute;
   left: 19%;
   top: 21%;
   width: 30px;
   fill: white; }
-
-.socialCopy {
+#socialContainer .socialCopy {
   padding-left: 60px; }
-  .socialCopy p {
+  #socialContainer .socialCopy p {
     margin: 0; }
+@media screen and (min-width: 768px) {
+  #socialContainer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; } }
 
 #newMembersDetails {
   width: 100%; }
