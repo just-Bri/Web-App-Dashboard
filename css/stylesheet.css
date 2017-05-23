@@ -40,7 +40,7 @@
     -webkit-transition: .4s;
     transition: .4s; }
   .switches input:checked + .slider, #userSettings input:checked + .slider {
-    background-color: #2196F3; }
+    background-color: #f48236; }
   .switches input:focus + .slider, #userSettings input:focus + .slider {
     box-shadow: 0 0 1px #2196F3; }
   .switches input:checked + .slider:before, #userSettings input:checked + .slider:before {
@@ -48,6 +48,7 @@
     -ms-transform: translateX(26px);
     transform: translateX(26px); }
   .switches .slider.round, #userSettings .slider.round {
+    background-color: #36474f;
     border-radius: 34px; }
   .switches .slider.round:before, #userSettings .slider.round:before {
     border-radius: 50%; }
@@ -69,7 +70,24 @@ body {
 a {
   color: #f48236; }
 
-placeholder {
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: white; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: white; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: white; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: white; }
 
 div.tab {
@@ -319,7 +337,8 @@ header {
     width: 100%; }
   #messageContainer #messageInputs #userSearchBox,
   #messageContainer #messageInputs #userMessageBox {
-    padding-left: 10px; }
+    padding-left: 10px;
+    background-color: #36474f; }
   #messageContainer #messageInputs #sendMessage {
     height: 24px;
     background-color: #36474f; }
@@ -339,7 +358,8 @@ header {
   #userSettings #settingsContainer #timezoneSelector {
     border: #36474f solid 1px;
     height: 24px;
-    width: 100%; }
+    width: 100%;
+    background-color: #36474f; }
   #userSettings #settingsContainer #saveSettings {
     display: flex;
     justify-content: space-between; }

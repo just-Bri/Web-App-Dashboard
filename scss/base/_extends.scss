@@ -47,7 +47,7 @@
   }
 
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: $color-highlight;
   }
 
   input:focus + .slider {
@@ -62,6 +62,7 @@
 
   /* Rounded sliders */
   .slider.round {
+    background-color: $color-dark;
     border-radius: 34px;
   }
 

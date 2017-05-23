@@ -2,7 +2,8 @@
 $color-base: #607D8B; // base
 $color-highlight: #f48236; // highlight
 $color-dark: darken(($color-base), 20%); // dark/background
+$color-highlight-dark: darken(($color-highlight), 20%); // dark/highlight
 
 // Style Variables
 // Default border
-$black-border: $color-dark solid 1px;
+$dark-border: $color-dark solid 1px;

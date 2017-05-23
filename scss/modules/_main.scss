@@ -62,7 +62,7 @@
 }
 // Figure out how to center Chart labels!!!!!!!!
 .tablinks {
-    border: $black-border;
+    border: $dark-border;
     @extend .roundedCorners;
     background-color: $color-dark;
     color: white;
@@ -72,13 +72,13 @@
 .container {
     padding-top: 15px;
     padding-bottom: 15px;
-    border: $black-border;
+    border: $dark-border;
     border-bottom: 0;
 }
 
 // Social Stats
 .socialDiv {
-    border: $black-border;
+    border: $dark-border;
     padding: 10px;
     margin-left: 10%;
     margin-right: 10%;
@@ -140,7 +140,7 @@
 .memberDetails {
     margin: 0 auto;
     width: 90%;
-    border-bottom: $black-border;
+    border-bottom: $dark-border;
     padding: 10px 0;
     img {
         float: left;
@@ -167,7 +167,7 @@
 .activityContainer {
     margin: 0 auto;
     width: 90%;
-    border-bottom: $black-border;
+    border-bottom: $dark-border;
     padding: 10px 0;
     img {
         float: left;
@@ -186,7 +186,7 @@
 .activityContainer {
     margin: 0 auto;
     width: 90%;
-    border-bottom: $black-border;
+    border-bottom: $dark-border;
     padding: 10px 0;
     img {
         float: left;
@@ -221,7 +221,7 @@
         #userSearchBox,
         #userMessageBox,
         #sendMessage {
-            border: $black-border;
+            border: $dark-border;
             @extend .roundedCorners;
             margin-bottom: 10px;
             width: 100%;
@@ -229,6 +229,7 @@
         #userSearchBox,
         #userMessageBox {
             padding-left: 10px;
+            background-color: $color-dark;
         }
         #sendMessage {
             height: 24px;
@@ -259,10 +260,11 @@
             }
         }
         #timezoneSelector {
-            border: $black-border;
+            border: $dark-border;
             height: 24px;
             @extend .roundedCorners;
             width: 100%;
+            background-color: $color-dark;
         }
         #saveSettings {
             display: flex;
@@ -278,7 +280,7 @@
                 margin-top: 10px;
                 height: 24px;
                 @extend .roundedCorners;
-                border: $black-border;
+                border: $dark-border;
                 background-color: $color-dark;
             }
         }
