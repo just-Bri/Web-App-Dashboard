@@ -1,9 +1,9 @@
-.circle, #socialContainer .socialBackground, .memberDetails img, .activityContainer img {
+.circle, #socialContainer .socialBackground, #newMembers .memberDetails img, #recentActivity .activityContainer img {
   border-radius: 50%; }
 
-.roundedCorners, #dashboardHeader #dashboardSearch, .tablinks, #messageContainer #messageInputs #userSearchBox,
-#messageContainer #messageInputs #userMessageBox,
-#messageContainer #messageInputs #sendMessage, #userSettings #settingsContainer #timezoneSelector, #userSettings #settingsContainer #saveSettings #saveButton,
+.roundedCorners, #dashboardHeader #dashboardSearch, .tablinks, #messageUser #messageContainer #messageInputs #userSearchBox,
+#messageUser #messageContainer #messageInputs #userMessageBox,
+#messageUser #messageContainer #messageInputs #sendMessage, #userSettings #settingsContainer #timezoneSelector, #userSettings #settingsContainer #saveSettings #saveButton,
 #userSettings #settingsContainer #saveSettings #cancelButton {
   border-radius: 5px; }
 
@@ -183,6 +183,9 @@ header {
   .alert #alertText {
     margin: 0 auto;
     color: white; }
+  @media screen and (min-width: 768px) {
+    .alert {
+      border: #36474f solid 1px; } }
 
 .closebtn {
   margin-left: 15px;
@@ -197,6 +200,12 @@ header {
 .closebtn:hover {
   color: #607D8B; }
 
+@media screen and (min-width: 768px) {
+  #trafficSection {
+    margin: 0 auto;
+    width: 90%;
+    border: 0; } }
+
 #trafficTabs {
   display: flex;
   justify-content: space-around; }
@@ -205,6 +214,20 @@ header {
   border: #36474f solid 1px;
   background-color: #36474f;
   color: white; }
+
+@media screen and (min-width: 768px) {
+  #dailyChartSection {
+    margin: 0 auto;
+    width: 90%;
+    border: 0;
+    border-top: #36474f solid 1px; } }
+
+@media screen and (min-width: 768px) {
+  #mobileUsers {
+    margin: 0 auto;
+    width: 90%;
+    border: 0;
+    border-top: #36474f solid 1px; } }
 
 .container {
   padding-top: 15px;
@@ -268,88 +291,104 @@ header {
     display: flex;
     justify-content: space-around; } }
 
-#newMembersDetails {
+#newMembers #newMembersDetails {
   width: 100%; }
-
-#newMembersTitle {
+#newMembers #newMembersTitle {
   width: 90%;
   margin: 0 auto; }
-
-.memberDetails {
+#newMembers .memberDetails {
   margin: 0 auto;
   width: 90%;
   border-bottom: #36474f solid 1px;
   padding: 10px 0; }
-  .memberDetails img {
+  #newMembers .memberDetails img {
     float: left;
     width: 35px;
     height: 35px; }
-  .memberDetails .userName,
-  .memberDetails .userEmail,
-  .memberDetails .userJoined {
+  #newMembers .memberDetails .userName,
+  #newMembers .memberDetails .userEmail,
+  #newMembers .memberDetails .userJoined {
     margin: 0; }
-  .memberDetails .userJoined {
+  #newMembers .memberDetails .userJoined {
     display: none;
     padding-top: 5px; }
-  .memberDetails .userNameEmailJoined {
+  #newMembers .memberDetails .userNameEmailJoined {
     margin: 0;
     padding-left: 50px; }
+@media screen and (min-width: 768px) {
+  #newMembers {
+    float: left;
+    width: 50%; } }
 
-.activityContainer {
+#recentActivity .activityContainer {
   margin: 0 auto;
   width: 90%;
   border-bottom: #36474f solid 1px;
   padding: 10px 0; }
-  .activityContainer img {
+  #recentActivity .activityContainer img {
     float: left;
     width: 35px;
     height: 35px; }
-
-#recentUserActivity {
+#recentActivity #recentUserActivity {
   width: 100%; }
-
-#activityTitle {
+#recentActivity #activityTitle {
   width: 90%;
   margin: 0 auto; }
-
-.activityContainer {
+#recentActivity .activityContainer {
   margin: 0 auto;
   width: 90%;
   border-bottom: #36474f solid 1px;
   padding: 10px 0; }
-  .activityContainer img {
+  #recentActivity .activityContainer img {
     float: left;
     width: 35px;
     height: 35px; }
-  .activityContainer .userActivity {
+  #recentActivity .activityContainer .userActivity {
     margin: 0;
     margin-left: 50px; }
-    .activityContainer .userActivity p {
+    #recentActivity .activityContainer .userActivity p {
       margin: 0; }
+@media screen and (min-width: 768px) {
+  #recentActivity {
+    float: right;
+    width: 50%;
+    border-left: 0; } }
 
-#messageContainer {
-  width: 90%;
-  margin: 0 auto; }
-  #messageContainer #messageInputs #messageTitle {
-    margin: 0 auto;
-    padding-bottom: 10px; }
-  #messageContainer #messageInputs #userSearchBox {
-    height: 24px; }
-  #messageContainer #messageInputs #userMessageBox {
-    padding-top: 6px; }
-  #messageContainer #messageInputs #userSearchBox,
-  #messageContainer #messageInputs #userMessageBox,
-  #messageContainer #messageInputs #sendMessage {
-    border: #36474f solid 1px;
-    margin-bottom: 10px;
-    width: 100%; }
-  #messageContainer #messageInputs #userSearchBox,
-  #messageContainer #messageInputs #userMessageBox {
-    padding-left: 10px;
-    background-color: #36474f; }
-  #messageContainer #messageInputs #sendMessage {
-    height: 24px;
-    background-color: #36474f; }
+#messageUser {
+  clear: both; }
+  #messageUser #messageContainer {
+    width: 90%;
+    margin: 0 auto; }
+    #messageUser #messageContainer #messageInputs #messageTitle {
+      margin: 0 auto;
+      padding-bottom: 10px; }
+      @media screen and (min-width: 768px) {
+        #messageUser #messageContainer #messageInputs #messageTitle {
+          padding-bottom: 30px; } }
+    #messageUser #messageContainer #messageInputs #userSearchBox {
+      height: 24px; }
+    #messageUser #messageContainer #messageInputs #userMessageBox {
+      padding-top: 6px; }
+    #messageUser #messageContainer #messageInputs #userSearchBox,
+    #messageUser #messageContainer #messageInputs #userMessageBox,
+    #messageUser #messageContainer #messageInputs #sendMessage {
+      border: #36474f solid 1px;
+      margin-bottom: 10px;
+      width: 100%; }
+    #messageUser #messageContainer #messageInputs #userSearchBox,
+    #messageUser #messageContainer #messageInputs #userMessageBox {
+      padding-left: 10px;
+      background-color: #36474f; }
+    #messageUser #messageContainer #messageInputs #sendMessage {
+      height: 24px;
+      background-color: #36474f; }
+      @media screen and (min-width: 768px) {
+        #messageUser #messageContainer #messageInputs #sendMessage {
+          margin-top: 14px; } }
+  @media screen and (min-width: 768px) {
+    #messageUser {
+      float: left;
+      width: 50%; } }
 
 #userSettings #settingsContainer {
   width: 90%;
@@ -381,6 +420,11 @@ header {
       height: 24px;
       border: #36474f solid 1px;
       background-color: #36474f; }
+@media screen and (min-width: 768px) {
+  #userSettings {
+    float: right;
+    width: 50%;
+    border-left: 0; } }
 
 .navBar {
   display: flex;

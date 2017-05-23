@@ -38,13 +38,13 @@
                 <img class="navSvg" src="img/icons/icon-settings.svg">
             </navigation>
            
-            <section class="main">
+            <section class="main clearfix">
                 <section id="dashboardHeader" class="clearfix">
                         <span id="dashboardSpan">DASHBOARD</span>
                         <input id="dashboardSearch" type="text" name="search" placeholder="Search..">
                 </section>
                 <section class="alert">
-                    <p id="alertText">You have unread Notifications.<span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">X</span></p>
+                    <p id="alertText">You have unread Notifications.<span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';document.getElementById('trafficSection').style.borderTop='#2D4A58 solid 1px';">X</span></p>
                 </section>
                 <section id="trafficSection" class="container">    
                     <div id="trafficTabs">
@@ -143,7 +143,7 @@
                     </div>
                 </section>
 
-                <section id="newMembers" class="container">
+                <section id="newMembers" class="container clearfix">
                     <div id="newMembersTitle"><span>NEW MEMBERS</span></div>
                     <div id="newMembersDetails">
                         <div id="userOneDetails" class="memberDetails">
@@ -181,7 +181,7 @@
                     </div>
                 </section>
 
-                <section id="recentActivity" class="container">
+                <section id="recentActivity" class="container clearfix">
                     <div id="activityTitle"><span>RECENT ACTIVITY</span></div>
                     <div id="recentUserActivity">
                         <div id="recentActivityOne" class="activityContainer">
@@ -214,16 +214,14 @@
                     </div>
                 </section>
 
-                <section id="messageUser"class="container">
+                <section id="messageUser"class="container clearfix">
                     <div id="messageContainer">
                         <div id="messageInputs">
                             <div id="messageTitle"><span>MESSAGE USER</span></div>
                             <input type="text" id="userSearchBox" placeholder="Search for User">
                             <textarea class="textarea" name="textarea" id="userMessageBox" rows="4" cols="20" placeholder="Message For User"></textarea>
                             <input id="sendMessage" class="sendBtn" type="submit" value="SEND" name="SEND">
-
-                        </div>
-                        
+                        </div>    
                     </div>
                 </section>
 

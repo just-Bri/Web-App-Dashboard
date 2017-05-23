@@ -36,6 +36,9 @@
         margin: 0 auto;
         color: white;
     }
+    @media screen and (min-width: 768px) {
+        border: $color-dark solid 1px;
+    }
 }
 
 // The close button 
@@ -56,16 +59,42 @@
 }
 
 // Traffic Styling
+#trafficSection {
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        width: 90%;
+        border: 0;
+    }
+}
 #trafficTabs {
     display: flex;
     justify-content: space-around;
 }
-// Figure out how to center Chart labels!!!!!!!!
 .tablinks {
     border: $dark-border;
     @extend .roundedCorners;
     background-color: $color-dark;
     color: white;
+}
+
+// Daily Traffic Specifics
+#dailyChartSection {
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        width: 90%;
+        border: 0;
+        border-top: $color-dark solid 1px;
+    }
+}
+
+// Device Stats
+#mobileUsers {
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        width: 90%;
+        border: 0;
+        border-top: $color-dark solid 1px;
+    }
 }
 
 // Generic Section styling
@@ -144,111 +173,135 @@
 }
 
 // New Members styling
-#newMembersDetails {
-    width: 100%;
-}
-#newMembersTitle {
-    width: 90%;
-    margin: 0 auto;
-}
-.memberDetails {
-    margin: 0 auto;
-    width: 90%;
-    border-bottom: $dark-border;
-    padding: 10px 0;
-    img {
-        float: left;
-        @extend .circle;
-        width: 35px;
-        height: 35px;
+#newMembers {
+    #newMembersDetails {
+        width: 100%;
     }
-    .userName,
-    .userEmail,
-    .userJoined {
-        margin: 0;
+    #newMembersTitle {
+        width: 90%;
+        margin: 0 auto;
     }
-    .userJoined {
-        display: none;
-        padding-top: 5px;
-    }
-    .userNameEmailJoined {
-        margin: 0;
-        padding-left: 50px;
-    }
-}
-
-// Recent Activity Styling
-.activityContainer {
-    margin: 0 auto;
-    width: 90%;
-    border-bottom: $dark-border;
-    padding: 10px 0;
-    img {
-        float: left;
-        @extend .circle;
-        width: 35px;
-        height: 35px;
+    .memberDetails {
+        margin: 0 auto;
+        width: 90%;
+        border-bottom: $dark-border;
+        padding: 10px 0;
+        img {
+            float: left;
+            @extend .circle;
+            width: 35px;
+            height: 35px;
         }
-}
-#recentUserActivity {
-    width: 100%;
-}
-#activityTitle {
-    width: 90%;
-    margin: 0 auto;
-}
-.activityContainer {
-    margin: 0 auto;
-    width: 90%;
-    border-bottom: $dark-border;
-    padding: 10px 0;
-    img {
-        float: left;
-        @extend .circle;
-        width: 35px;
-        height: 35px;
-    }
-    .userActivity {
-        margin: 0;
-        margin-left: 50px;
-        p {
+        .userName,
+        .userEmail,
+        .userJoined {
             margin: 0;
         }
+        .userJoined {
+            display: none;
+            padding-top: 5px;
+        }
+        .userNameEmailJoined {
+            margin: 0;
+            padding-left: 50px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        float: left;
+        width: 50%;
     }
 }
-
+// Recent Activity Styling
+#recentActivity {
+    .activityContainer {
+        margin: 0 auto;
+        width: 90%;
+        border-bottom: $dark-border;
+        padding: 10px 0;
+        img {
+            float: left;
+            @extend .circle;
+            width: 35px;
+            height: 35px;
+            }
+    }
+    #recentUserActivity {
+        width: 100%;
+    }
+    #activityTitle {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .activityContainer {
+        margin: 0 auto;
+        width: 90%;
+        border-bottom: $dark-border;
+        padding: 10px 0;
+        img {
+            float: left;
+            @extend .circle;
+            width: 35px;
+            height: 35px;
+        }
+        .userActivity {
+            margin: 0;
+            margin-left: 50px;
+            p {
+                margin: 0;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        float: right;
+        width: 50%;
+        border-left: 0;
+    }
+}
 // Message User Styling
-#messageContainer {
-    width: 90%;
-    margin: 0 auto;
-    #messageInputs{
-        #messageTitle {
-            margin: 0 auto;
-            padding-bottom: 10px;
+#messageUser {
+    clear: both;
+    #messageContainer {
+        width: 90%;
+        margin: 0 auto;
+        #messageInputs{
+            #messageTitle {
+                margin: 0 auto;
+                padding-bottom: 10px;
+                @media screen and (min-width: 768px) {
+                    padding-bottom: 30px;
+                }
+            }
+            #userSearchBox {
+                height: 24px;
+            }
+            #userMessageBox {
+                padding-top: 6px;
+            }
+            #userSearchBox,
+            #userMessageBox,
+            #sendMessage {
+                border: $dark-border;
+                @extend .roundedCorners;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            #userSearchBox,
+            #userMessageBox {
+                padding-left: 10px;
+                background-color: $color-dark;
+            }
+            #sendMessage {
+                height: 24px;
+                background-color: $color-dark;
+                @media screen and (min-width: 768px) {
+                    margin-top: 14px;
+                }
+            }
         }
-        #userSearchBox {
-            height: 24px;
-        }
-        #userMessageBox {
-            padding-top: 6px;
-        }
-        #userSearchBox,
-        #userMessageBox,
-        #sendMessage {
-            border: $dark-border;
-            @extend .roundedCorners;
-            margin-bottom: 10px;
-            width: 100%;
-        }
-        #userSearchBox,
-        #userMessageBox {
-            padding-left: 10px;
-            background-color: $color-dark;
-        }
-        #sendMessage {
-            height: 24px;
-            background-color: $color-dark;
-        }
+    }
+    @media screen and (min-width: 768px) {
+        float: left;
+        width: 50%;
     }
 }
 
@@ -298,5 +351,10 @@
                 background-color: $color-dark;
             }
         }
+    }
+    @media screen and (min-width: 768px) {
+        float: right;
+        width: 50%;
+        border-left: 0;
     }
 }
