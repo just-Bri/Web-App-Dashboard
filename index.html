@@ -32,10 +32,22 @@
             </header>
 
             <navigation class="navBar">
-                <img class="navSvg" src="img/icons/icon-dashboard.svg">
-                <img class="navSvg" src="img/icons/icon-members.svg">
-                <img class="navSvg" src="img/icons/icon-visits.svg">
-                <img class="navSvg" src="img/icons/icon-settings.svg">
+                <div class="navIconContainer">
+                    <img class="navSvg" src="img/icons/icon-dashboard.svg">
+                    <p>DASHBOARD</p>
+                </div>
+                <div class="navIconContainer">
+                    <img class="navSvg" src="img/icons/icon-members.svg">
+                    <p>MEMBERS</p>
+                </div>
+                <div class="navIconContainer">
+                    <img class="navSvg" src="img/icons/icon-visits.svg">
+                    <p>VISITS</p>
+                </div>
+                <div class="navIconContainer">
+                    <img class="navSvg" src="img/icons/icon-settings.svg">
+                    <p>SETTINGS</p>
+                </div>
             </navigation>
            
             <section class="main clearfix">
@@ -46,6 +58,7 @@
                 <section class="alert">
                     <p id="alertText">You have unread Notifications.<span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';document.getElementById('trafficSection').style.borderTop='#2D4A58 solid 1px';">X</span></p>
                 </section>
+                
                 <section id="trafficSection" class="container">    
                     <div id="trafficTabs">
                         <button class="tablinks" onclick="openChart(event, 'Hourly')" id="defaultOpen">Hourly</button>
@@ -71,18 +84,19 @@
                         </div>
                     </div>
                 </section>
-                <section id="dailyChartSection" class="container">
-                    <div id="dailyChartDiv">
-                        <canvas id="trafficDaily"></canvas>
-                    </div>
+                <section id="dailyAndStats">
+                    <section id="dailyChartSection" class="container">
+                        <div id="dailyChartDiv">
+                            <canvas id="trafficDaily"></canvas>
+                        </div>
+                    </section>
+                
+                    <section id="mobileUsers" class="container">
+                        <div id="mobileChartDiv">
+                            <canvas id="mobileChart"></canvas>
+                        </div>
+                    </section>
                 </section>
-
-                <section id="mobileUsers" class="container">
-                    <div id="mobileChartDiv">
-                        <canvas id="mobileChart"></canvas>
-                    </div>
-                </section>
-
                 <section id="socialStats" class="container">
                     <div id="socialTitle">
                         <span>SOCIAL STATS</span>
@@ -184,28 +198,28 @@
                 <section id="recentActivity" class="container clearfix">
                     <div id="activityTitle"><span>RECENT ACTIVITY</span></div>
                     <div id="recentUserActivity">
-                        <div id="recentActivityOne" class="activityContainer">
+                        <div id="recentActivityOne" class="activityContainer clearfix">
                                 <img id="activityOnePicture" class="userPicture" src="img/profile-images/userOne.jpg">
                                 <div class="userActivity">
                                     <p id="activityOne">John One Doe commented on <a href="index.html">STATSapp's SEO Tips</a>.</p>
                                 </div>
                             </div>
                         </div>
-                        <div id="recentActivityTwo" class="activityContainer">
+                        <div id="recentActivityTwo" class="activityContainer clearfix">
                                 <img id="activityTwoPicture" class="userPicture" src="img/profile-images/userTwo.jpg">
                                 <div class="userActivity">
                                     <p id="activityTwo">John Two Doe liked the post <a href="index.html">Facebook's Changes for 2016</a>.</p>
                                 </div>
                             </div>
                         </div>
-                        <div id="recentActivityThree" class="activityContainer">
+                        <div id="recentActivityThree" class="activityContainer clearfix">
                                 <img id="activityThreePicture" class="userPicture" src="img/profile-images/userThree.jpg">
                                 <div class="userActivity">
                                     <p id="activityThree">John Three Doe commented on <a href="index.html">Facebook's Changes for 2016</a>.</p>
                                 </div>
                         </div>
                     </div>
-                    <div id="recentActivityFour" class="activityContainer">
+                    <div id="recentActivityFour" class="activityContainer clearfix">
                             <img id="activityFourPicture" class="userPicture" src="img/profile-images/userFour.jpg">
                             <div class="userActivity">
                                 <p id="activityFour">John Four Doe posted <a href="index.html">STATSapp's SEO Tips</a>.</p>

@@ -13,6 +13,7 @@ Chart.defaults.global.legend.responsive = true;
 Chart.defaults.global.defaultFontColor = '#000';
 Chart.defaults.global.title.fontColor = '#000';
 Chart.defaults.global.elements.line.backgroundColor = colorBackground;
+Chart.defaults.global.elements.rectangle.backgroundColor = colorBackground;
 
 // Chart constants
 var trafficChartHourly = document.getElementById('traffic-hourly');
@@ -143,7 +144,7 @@ var trafficMonthly = new Chart.Line(trafficChartMonthly, {
 // Stand-Alone Charts
 
 // Daily
-var dailyChart = new Chart.Line(dailyStandAlone, {
+var dailyChart = new Chart.Bar(dailyStandAlone, {
   options: {
     title: {
       display: true,

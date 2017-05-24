@@ -1,7 +1,7 @@
 .circle, #socialContainer .socialBackground, #newMembers .memberDetails img, #recentActivity .activityContainer img {
   border-radius: 50%; }
 
-.roundedCorners, #dashboardHeader #dashboardSearch, .tablinks, #messageUser #messageContainer #messageInputs #userSearchBox,
+.roundedCorners, #dashboardHeader #dashboardSearch, .alert, .tablinks, #messageUser #messageContainer #messageInputs #userSearchBox,
 #messageUser #messageContainer #messageInputs #userMessageBox,
 #messageUser #messageContainer #messageInputs #sendMessage, #userSettings #settingsContainer #timezoneSelector, #userSettings #settingsContainer #saveSettings #saveButton,
 #userSettings #settingsContainer #saveSettings #cancelButton {
@@ -126,7 +126,7 @@ header {
   background-color: #607D8B;
   padding-top: 0.5em; }
   header #appName {
-    padding-left: 20px;
+    padding-left: 15px;
     float: left; }
   header #headerIcons {
     float: right;
@@ -179,7 +179,9 @@ header {
   border: 1px solid #36474f;
   border-bottom: 0;
   background-color: #f48236;
-  color: white; }
+  color: white;
+  width: 90%;
+  margin: 0 auto; }
   .alert #alertText {
     margin: 0 auto;
     color: white; }
@@ -221,6 +223,14 @@ header {
     width: 90%;
     border: 0;
     border-top: #36474f solid 1px; } }
+@media screen and (min-width: 1024px) {
+  #dailyChartSection {
+    float: left;
+    width: 45%; } }
+@media screen and (min-width: 1024px) {
+  #dailyChartSection #dailyChartDiv #trafficDaily {
+    height: 400px !important;
+    width: 400px !important; } }
 
 @media screen and (min-width: 768px) {
   #mobileUsers {
@@ -228,12 +238,30 @@ header {
     width: 90%;
     border: 0;
     border-top: #36474f solid 1px; } }
+@media screen and (min-width: 1024px) {
+  #mobileUsers {
+    float: right;
+    width: 45%; } }
+@media screen and (min-width: 1024px) {
+  #mobileUsers {
+    height: 400px !important;
+    width: 400px !important; } }
+
+@media screen and (min-width: 1024px) {
+  #dailyAndStats {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 90%; } }
 
 .container {
   padding-top: 15px;
   padding-bottom: 15px;
   border: #36474f solid 1px;
   border-bottom: 0; }
+
+#socialStats {
+  clear: both; }
 
 #socialTitle {
   width: 90%;
@@ -430,10 +458,27 @@ header {
   display: flex;
   justify-content: space-around;
   background-color: #36474f; }
-  .navBar .navSvg {
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    max-width: 30px;
-    max-height: 30px; }
+  @media screen and (min-width: 768px) {
+    .navBar {
+      display: flex;
+      justify-content: space-around; } }
+  .navBar .navIconContainer {
+    display: flex;
+    justify-content: space-around; }
+    .navBar .navIconContainer .navSvg {
+      padding-top: 0.25em;
+      padding-bottom: 0.25em;
+      max-width: 30px;
+      max-height: 30px;
+      margin-top: 4px; }
+    .navBar .navIconContainer p {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .navBar .navIconContainer p {
+          display: inline-block;
+          margin: 0;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-left: 5px; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

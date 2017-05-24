@@ -2,10 +2,29 @@
     display: flex;
     justify-content: space-around;
     background-color: $color-dark;
-    .navSvg {
-        padding-top: 0.25em;
-        padding-bottom: 0.25em;
-        max-width: 30px;
-        max-height: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navIconContainer {
+        display: flex;
+        justify-content: space-around;
+        .navSvg {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+            max-width: 30px;
+            max-height: 30px;
+            margin-top: 4px;
+        }
+        p {
+            display: none;
+            @media screen and (min-width: 768px) {
+                display: inline-block;
+                margin: 0;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+            }
+        }
     }
 }
