@@ -1,12 +1,15 @@
 // Alerts
 function displayAlerts() {
+    var botMargin = 0;
     if (document.getElementById('notificationOne').innerHTML !== '') {
-        document.getElementById('notificationOne').style.display='inline-flex';
-        document.getElementById('dashboardHeader').style.marginBottom = '+35px';
+        document.getElementById('notificationOne').style.display='inline-block';
+        botMargin += 35;
+        document.getElementById('dashboardHeader').style.marginBottom = botMargin + 'px';
     }
     if (document.getElementById('notificationTwo').innerHTML !== '') {
-        document.getElementById('notificationTwo').style.display='inline-flex';
-        document.getElementById('dashboardHeader').style.marginBottom = '+35px';
+        document.getElementById('notificationTwo').style.display='inline-block';
+        botMargin += 35;
+        document.getElementById('dashboardHeader').style.marginBottom = botMargin + 'px';
     }
 }
 
@@ -14,6 +17,7 @@ function closeAlert1() {
     document.getElementById('notificationOne').style.display='none';
     document.getElementById('notificationOne').innerHTML='';
     document.getElementById('dashboardHeader').style.marginBottom = '35px';
+    document.getElementById('notificationTwo').style.top = '120px';
     if (document.getElementById('notificationTwo').innerHTML === '') {
         document.getElementById('dashboardHeader').style.marginBottom = '0px';
     }
@@ -60,3 +64,5 @@ function validateMessage() {
         document.getElementById('userMessageBox').value = '';
     }
 }
+
+// Store User Settings

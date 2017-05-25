@@ -146,6 +146,7 @@ header {
   left: 15px;
   top: 120px;
   margin-bottom: 10px;
+  padding-right: 0.5em;
   display: none;
   border: 1px solid #36474f;
   background-color: #f48236;
