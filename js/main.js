@@ -1,19 +1,30 @@
 // Alerts
 function displayAlerts() {
-    document.getElementById('notificationOne').style.display='inline-flex';
-    document.getElementById('notificationTwo').style.display='inline-flex';
-    document.getElementById('dashboardHeader').style.marginBottom = '+70px';
+    if (document.getElementById('notificationOne').innerHTML !== '') {
+        document.getElementById('notificationOne').style.display='inline-flex';
+        document.getElementById('dashboardHeader').style.marginBottom = '+35px';
+    }
+    if (document.getElementById('notificationTwo').innerHTML !== '') {
+        document.getElementById('notificationTwo').style.display='inline-flex';
+        document.getElementById('dashboardHeader').style.marginBottom = '+35px';
+    }
 }
 
 function closeAlert1() {
     document.getElementById('notificationOne').style.display='none';
     document.getElementById('notificationOne').innerHTML='';
-    document.getElementById('dashboardHeader').style.marginBottom =  ; // Figure out how to subtract X from margin
+    document.getElementById('dashboardHeader').style.marginBottom = '35px';
+    if (document.getElementById('notificationTwo').innerHTML === '') {
+        document.getElementById('dashboardHeader').style.marginBottom = '0px';
+    }
 }
 function closeAlert2() {
     document.getElementById('notificationTwo').style.display='none';
     document.getElementById('notificationTwo').innerHTML='';
     document.getElementById('dashboardHeader').style.marginBottom = '35px';
+    if (document.getElementById('notificationOne').innerHTML === '') {
+        document.getElementById('dashboardHeader').style.marginBottom = '0px';
+    }
 }
 
 // Chart Script
