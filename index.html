@@ -23,7 +23,13 @@
                 </div>
                 <div id="headerIcons">
                     <div id="notificationBell">
-                        <img class="svg" src="img/icons/icon-bell.svg" height="20px" width="20px">
+                        <img class="svg" src="img/icons/icon-bell.svg" height="20px" width="20px" onclick="displayAlerts();">
+                    </div>
+                    <div id="notificationOne">
+                        <span >John O. Doe sent you a message!</span><span class="closebtn" onclick="closeAlert1()">X</span>
+                    </div>
+                    <div id="notificationTwo">
+                        <span >John T. Doe liked your post!</span><span class="closebtn" onclick="closeAlert2()">X</span>
                     </div>
                     <div id="userIcon">
                         <img class="svg" src="img/icons/icon-user-profile.jpg" height="20px" width="20px">
@@ -234,7 +240,7 @@
                             <div id="messageTitle"><span>MESSAGE USER</span></div>
                             <input type="text" id="userSearchBox" placeholder="Search for User">
                             <textarea class="textarea" name="textarea" id="userMessageBox" rows="4" cols="20" placeholder="Message For User"></textarea>
-                            <input id="sendMessage" class="sendBtn" type="submit" value="SEND" name="SEND">
+                            <input id="sendMessage" class="sendBtn" type="submit" value="SEND" name="SEND" onclick="validateMessage()">
                         </div>    
                     </div>
                 </section>

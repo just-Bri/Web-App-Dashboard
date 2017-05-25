@@ -29,11 +29,11 @@
 .alert {
     padding: 0.5em;
     border: 1px solid $color-dark;
-    border-bottom: 0;
     background-color: $color-highlight;
     color: white;
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 20px;
     @extend .roundedCorners;
     #alertText {
         margin: 0 auto;
@@ -234,6 +234,14 @@
         .userJoined {
             display: none;
             padding-top: 5px;
+            @media screen and (min-width: 768px) {
+                display: inline-block;
+            }
+            @media screen and (min-width: 1024px) {
+                float: right;
+                position: relative;
+                bottom: 15px;
+            }
         }
         .userNameEmailJoined {
             margin: 0;
@@ -310,6 +318,7 @@
             }
             #userMessageBox {
                 padding-top: 6px;
+                resize: none;
             }
             #userSearchBox,
             #userMessageBox,

@@ -1,7 +1,8 @@
 .circle, #socialContainer .socialBackground, #newMembers .memberDetails img, #recentActivity .activityContainer img {
   border-radius: 50%; }
 
-.roundedCorners, #dashboardHeader #dashboardSearch, .alert, .tablinks, #messageUser #messageContainer #messageInputs #userSearchBox,
+.roundedCorners, #notificationOne,
+#notificationTwo, #dashboardHeader #dashboardSearch, .alert, .tablinks, #messageUser #messageContainer #messageInputs #userSearchBox,
 #messageUser #messageContainer #messageInputs #userMessageBox,
 #messageUser #messageContainer #messageInputs #sendMessage, #userSettings #settingsContainer #timezoneSelector, #userSettings #settingsContainer #saveSettings #saveButton,
 #userSettings #settingsContainer #saveSettings #cancelButton {
@@ -139,6 +140,23 @@ header {
       padding-left: 5px;
       float: right; }
 
+#notificationOne,
+#notificationTwo {
+  position: absolute;
+  left: 15px;
+  top: 120px;
+  margin-bottom: 10px;
+  display: none;
+  border: 1px solid #36474f;
+  background-color: #f48236;
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 10px; }
+
+#notificationTwo {
+  top: 150px; }
+
 #dashboardHeader {
   padding: 15px;
   display: flex;
@@ -177,11 +195,11 @@ header {
 .alert {
   padding: 0.5em;
   border: 1px solid #36474f;
-  border-bottom: 0;
   background-color: #f48236;
   color: white;
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 20px; }
   .alert #alertText {
     margin: 0 auto;
     color: white; }
@@ -340,6 +358,14 @@ header {
   #newMembers .memberDetails .userJoined {
     display: none;
     padding-top: 5px; }
+    @media screen and (min-width: 768px) {
+      #newMembers .memberDetails .userJoined {
+        display: inline-block; } }
+    @media screen and (min-width: 1024px) {
+      #newMembers .memberDetails .userJoined {
+        float: right;
+        position: relative;
+        bottom: 15px; } }
   #newMembers .memberDetails .userNameEmailJoined {
     margin: 0;
     padding-left: 50px; }
@@ -396,7 +422,8 @@ header {
     #messageUser #messageContainer #messageInputs #userSearchBox {
       height: 24px; }
     #messageUser #messageContainer #messageInputs #userMessageBox {
-      padding-top: 6px; }
+      padding-top: 6px;
+      resize: none; }
     #messageUser #messageContainer #messageInputs #userSearchBox,
     #messageUser #messageContainer #messageInputs #userMessageBox,
     #messageUser #messageContainer #messageInputs #sendMessage {
