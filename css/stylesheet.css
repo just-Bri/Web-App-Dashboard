@@ -152,8 +152,17 @@ header {
   background-color: #f48236;
   color: white;
   width: 90%;
+  max-width: 600px;
   margin: 0 auto;
   padding-left: 10px; }
+  @media screen and (min-width: 768px) {
+    #notificationOne,
+    #notificationTwo {
+      left: 12%; } }
+  @media screen and (min-width: 1024px) {
+    #notificationOne,
+    #notificationTwo {
+      left: 20%; } }
 
 #notificationTwo {
   top: 150px; }
