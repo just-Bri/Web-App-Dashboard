@@ -22,6 +22,62 @@ header {
         }
     }
 }
+
+// Dashboard Header and Search
+#dashboardHeader {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    #dashboardSpan {
+        line-height: 24px;
+        width: 40%;
+    }
+    #dashboardSearch {
+        background-color: $color-dark;
+        color: white;
+        padding-left: 10px;
+        height: 24px;
+        width: 60%;
+        @extend .roundedCorners;
+    }
+}
+
+// The alert message box 
+.alert {
+    padding: 0.5em;
+    border: 1px solid $color-dark;
+    background-color: $color-highlight;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    @extend .roundedCorners;
+    #alertText {
+        margin: 0 auto;
+        color: white;
+    }
+    @media screen and (min-width: 768px) {
+        border: $color-dark solid 1px;
+    }
+}
+
+// The close button 
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-style: bold;
+}
+
+// When moving the mouse over the close button 
+.closebtn:hover {
+    color: $color-base;
+}
+
 #notificationOne,
 #notificationTwo {
     position: absolute;
@@ -48,23 +104,3 @@ header {
 #notificationTwo {
     top: 150px;
 }
-
-// Dashboard Header and Search
-#dashboardHeader {
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-    #dashboardSpan {
-        line-height: 24px;
-        width: 40%;
-    }
-    #dashboardSearch {
-        background-color: $color-dark;
-        color: white;
-        padding-left: 10px;
-        height: 24px;
-        width: 60%;
-        @extend .roundedCorners;
-    }
-}
-
